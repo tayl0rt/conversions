@@ -6,24 +6,24 @@ Version: 1.0 (stable)
 """
 print 'Welcome to Temperature Converter!'
 
-def celConvert():
+def cel_convert():
     try:
         fahrenheit = int(raw_input('Please enter the degrees in F '))
-        celOne = fahrenheit - 32
-        celTwo = celOne * 5
-        celThree = celTwo / 9
-        print fahrenheit, 'fahrenheit is', celThree, 'degrees celcius!'
+        cel_one = fahrenheit - 32
+        cel_two = cel_one * 5
+        cel_three = cel_two / 9
+        print fahrenheit, 'fahrenheit is', cel_three, 'degrees celcius!'
     except ValueError:
         print 'Oops, you have to enter a number!'
     return
 
-def fahrenConvert():
+def fahren_convert():
     try:
         celcius = int(raw_input('Please enter the degrees in C '))
-        fahrenOne = celcius * 9
-        fahrenTwo = fahrenOne / 5
-        fahrenThree = fahrenTwo + 32
-        print celcius, 'celcius is', fahrenThree, 'degrees fahrenheit!'
+        fahren_one = celcius * 9
+        fahren_two = fahren_one / 5
+        fahren_three = fahren_two + 32
+        print celcius, 'celcius is', fahren_three, 'degrees fahrenheit!'
     except ValueError:
         print 'Oops, you have to enter a number!'
     return
@@ -38,10 +38,10 @@ while not done:
 
 
     if selectOption == 'f':
-        celConvert()
+        cel_convert()
 
     elif selectOption == 'c':
-        fahrenConvert()
+        fahren_convert()
 
     elif selectOption == 'q':
         done = True
